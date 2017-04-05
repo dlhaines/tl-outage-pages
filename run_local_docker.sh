@@ -11,6 +11,8 @@ TAG=outage_a
 # on localhost 8080.  This file is customized to run on a local docker
 # instance.
 
+echo "VERIFY THAT GETTING CORRECT httpd.conf"
+
 # if no httpd.conf file exists create one.
 if [[ ! -e $(pwd)/external/httpd.conf ]]; then
     cp $(pwd)/external/httpd.conf.local.8080 $(pwd)/external/httpd.conf
